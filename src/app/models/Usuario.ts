@@ -3,4 +3,5 @@ export class Usuario {
     name?: string;
     job?: string;
     createdAt?: Date;
+    updatedAt?: Date;
 }

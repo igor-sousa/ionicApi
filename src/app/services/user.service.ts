@@ -26,4 +26,8 @@ export class UserService {
   public cadastrar(usuario: Usuario) {
     return this.http.post(this.url, usuario);
   }
+
+  public editar(usuario: Usuario) {
+    return this.http.put(`${this.url}/${usuario.id}`, usuario);
+  }
 }
